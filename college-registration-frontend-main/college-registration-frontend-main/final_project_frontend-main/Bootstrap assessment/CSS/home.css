@@ -1,0 +1,135 @@
+.table-container {
+    padding: 20px;
+  }
+body{
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    position: relative;
+}
+.bg-image {
+    background-image: url('../assets/breadcrumb-bg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-color: "#140C1C";
+    height : 50vh;
+    
+}
+
+
+.nav-container {
+  background-color: rgb(14, 2, 34);
+    z-index: 3;
+  background: radial-gradient(
+    circle,
+    hsla(263, 51%, 18%, 1) 0%,
+    hsla(264, 51%, 16%, 1) 100%,    
+    hsla(264, 51%, 16%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(263, 51%, 18%, 1) 0%,
+    hsla(264, 51%, 16%, 1) 100%,
+    hsla(264, 51%, 16%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(263, 51%, 18%, 1) 0%,
+    hsla(264, 51%, 16%, 1) 100%,
+    hsla(264, 51%, 16%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#281644", endColorstr="#25143E", GradientType=1 );
+ /* margin-top: 20px; */
+  border-radius: 20px;
+  position: sticky;
+  /* top: 10px; */
+  
+}
+
+.btn-hire-me {
+  background-image: linear-gradient(to right, #7c49e4, #30185e);
+  border-radius: 50px; 
+  color: white;
+  font-weight: bold;
+  transition: background-image 0.3s ease; 
+}
+.btn-hire-me:hover {
+  background-image: linear-gradient(to right, #30185e, #7c49e4);
+  color: rgb(255, 255, 255);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: 2rem;
+  font-size: 1.25rem; 
+   
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item p {
+  margin: 0;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+.nav-item p::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, #7c49e4, #4a2692, #30185e);
+  transition: width 0.3s ease-in-out;
+  margin-top: 2px;
+  border-radius: 5px;
+}                                           
+
+.nav-item p:hover {
+  transform: scale(1.1);
+}
+
+.nav-item p:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+.section-title{
+    
+    background: linear-gradient(to right, #8953f7, #fefdff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.service-section:hover{
+    background: linear-gradient(to right,#844ef2,#2d1659);
+    border-radius: 20px;
+    transform: scale(1.1);
+    .number-title,.arrow-icons{
+        color: #fff;
+    }
+}
+.service-section{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
